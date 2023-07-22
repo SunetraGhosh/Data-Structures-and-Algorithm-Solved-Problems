@@ -11,3 +11,9 @@ In our case, we want to create an array of `numStudents` elements, each of which
 The complete line `struct Student* students = (struct Student*)malloc(numStudents * sizeof(struct Student));` allocates enough memory to store an array of `numStudents` `struct Student` objects and stores the memory address of the first element of the allocated block in the `students` pointer variable.
 
 After this line executes successfully, the `students` pointer points to the beginning of the dynamically allocated memory block, and you can use array subscript notation (e.g., `students[i]`) or pointer arithmetic to access individual elements of the array.
+
+
+
+
+
+both students and firstStudent point to the same memory address, which is the start of the array of struct Student structures. This is why firstStudent automatically points to the first element of the array.
