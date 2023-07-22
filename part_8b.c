@@ -47,7 +47,7 @@ int main() {
     printf("\nAfter modifying the age of the first student:\n");
     printf("Student 1: Name: %s, Age: %d\n", firstStudent->name, firstStudent->age);
 
-    // Don't forget to free the dynamically allocated memory when it's no longer needed
+    // free the dynamically allocated memory when it's no longer needed
     free(students);
 
     return 0;
